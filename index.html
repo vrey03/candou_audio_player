@@ -1,32 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma musique</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background: #f5f5f5;
-        }
+<title>Birthday Rap Song</title>
 
-        audio {
-            width: 90%;
-            max-width: 500px;
-        }
-    </style>
+<style>
+body {
+    margin: 0;
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.cover {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+audio {
+    width: 100%;
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Écouter la musique</h1>
+<div class="container">
+
+    <img src="cover.jpg" alt="Pochette" class="cover">
+
+    <div class="title">
+        Birthday Rap Song
+    </div>
 
     <audio controls>
         <source src="ricard-redcat.mp3" type="audio/mpeg">
         Votre navigateur ne supporte pas l'audio.
     </audio>
+
+</div>
 
 </body>
 </html>
